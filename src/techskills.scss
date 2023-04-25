@@ -1,0 +1,170 @@
+.title2 {
+  margin-top: 10rem;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.tech {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 250px);
+  justify-content: center;
+  gap:15px;
+  transition-duration: 500ms;
+
+  
+
+  div {
+    transition: transform 0.25s ease-in-out;
+    background-color: rgb(29, 29, 29);
+  }
+
+  .grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    outline: 2px solid;
+    outline-color: rgb(85, 85, 85);
+    border-radius: 5px;
+ 
+
+
+    .body {
+      font-weight: 300;
+      font-size: 0.9rem;
+      text-align: left;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      
+    }
+
+    .html,.js,.node,.react,.redux,.scss,.strapi,.css{
+      font-weight: 700;
+    }
+
+    .html {
+      
+      color: rgb(236, 144, 108);
+    }
+
+    .js {
+      color: rgb(232, 235, 102);
+    }
+    .node {
+      color: rgb(106, 223, 121);
+    }
+    .react {
+      color: rgb(124, 172, 226);
+    }
+
+    .css {
+      color: rgb(102, 129, 218);
+    }
+    .scss {
+      color: rgb(241, 128, 223);
+    }
+    .redux {
+      color: rgb(178, 133, 230);
+    }
+    .strapi {
+      color: rgb(101, 245, 185);
+    }
+  }
+  .grid:hover {
+    cursor: pointer;
+    transition-duration: 200ms;
+    background-color: rgb(24, 23, 23);
+    div{
+      background-color:  rgb(24, 23, 23);
+    }
+  }
+}
+
+.hover:hover{
+
+  .tech{
+    transition-delay: 0s;
+    transition-duration: 500ms;
+    gap: 60px;
+  
+  }
+}
+
+
+@media only screen and (max-width: 688px) {
+
+  .hover:hover{
+
+    .tech{
+      gap: 1rem;
+    
+    }
+  }
+  .title2 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    
+  }
+  .tech {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+  .tech::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+  .tech {
+    overflow-x: auto;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: repeat(2, auto);
+
+    min-width: 10px;
+    justify-content:start;
+    margin: 1.2rem;
+    gap: 1rem;
+
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        outline-offset: -2px;
+        outline: none;
+        border-radius: 5px;
+        
+  
+
+        
+        .body{
+          font-weight: 400;
+        }
+        
+    }
+
+  }
+}
+
+@media only screen and (min-width: 688px) {
+  
+
+
+  .tech {
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: repeat(4, auto);
+
+  }
+}
+
+@media only screen and (min-width: 1190px) {
+  
+
+
+  .tech {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, auto);
+
+  }
+}

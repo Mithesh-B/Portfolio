@@ -12,7 +12,7 @@ const TechSkills =forwardRef((props, ref) => {
       <div className='tech'>
         <div className="grid">
           <div className="html">HTML</div>
-          <div className='body'>HTML (Hypertext Markup Language) is a standard markup language used to create and structure content on the web.</div>
+          <div className='body'>HTML is a standard markup language used to create and structure content on the web.</div>
         </div>
         <div className="grid">
           <div className="node">Node.js</div>

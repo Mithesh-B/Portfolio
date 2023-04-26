@@ -57,7 +57,7 @@ const AboutMe = ({contact}) => {
           </div>
         </div>
         <div className="desc">
-          Hey there, This is Mithesh! As a <span>front-end developer</span> with a passion
+          Hey there. This is Mithesh! As a <span>front-end developer</span> with a passion
           for <span> UI design,</span> I'm thrilled to have you here.
           <br />
           <br />

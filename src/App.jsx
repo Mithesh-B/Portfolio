@@ -1,11 +1,11 @@
-import React from 'react'
-import Nav from './Nav'
-import AboutMe from './AboutMe'
-import TechSkills from './TechSkills'
-import Projects from './Projects'
-import Contact from './Contact'
+import React from 'react';
+import Nav from './components/nav/Nav';
+import AboutMe from './components/about/AboutMe'
+import TechSkills from "./components/skills/TechSkills";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 import './app.scss'
-import{useState, useEffect, useRef} from 'react'
+import { useState, useEffect, useRef } from 'react';
 
 
 

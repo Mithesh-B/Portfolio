@@ -89,8 +89,8 @@ const Projects =forwardRef((props, ref) => {
       <div className='projectstop'>
         <div className='project' ref={(el) => projectRefs.current[2] = el}>
         <div className='zero'>01 JavaScript</div>
-          <div className='one'>02 CSS</div>
-          <div className='two'>03 HTML</div>
+          <div className='one'>02 Node.js</div>
+          <div className='two'>03 MongoDB</div>
           <div className='three'>04 Leaflet.js</div>
           <h1 className='title_p'>Safe walk.</h1>
           <div className='description'>
@@ -130,6 +130,7 @@ const Projects =forwardRef((props, ref) => {
         <img src="../project4.png" alt="a laptop"/>
         </div>
       </div>
+
     </div>
     </div>
   );

@@ -1,3 +1,5 @@
+
+
 .title2 {
   margin-top: 10rem;
   font-weight: 600;
@@ -11,24 +13,26 @@
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(2, 250px);
   justify-content: center;
-  gap:15px;
+  gap:12px;
   transition-duration: 500ms;
 
   
 
   div {
     transition: transform 0.25s ease-in-out;
-    background-color: rgb(29, 29, 29);
+         background-color: #1a1a1a;
+         
   }
 
   .grid {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.5rem;
-    outline: 2px solid;
-    outline-color: rgb(85, 85, 85);
-    border-radius: 5px;
- 
+    border: 1px solid;
+    border-color: rgb(48, 48, 48);
+    border-radius: 3px;
+      transition: border-color 0.3s ease;
+
 
 
     .body {
@@ -37,15 +41,19 @@
       text-align: left;
       padding-top: 1rem;
       padding-bottom: 1rem;
+       background-color: #0e0e0e00;
+       color: #c9c6c6;
       
     }
 
     .html,.js,.node,.react,.redux,.mongo,.strapi,.css{
       font-weight: 700;
+             background-color: #0e0e0e00;
+             
     }
 
     .html {
-      
+
       color: rgb(236, 144, 108);
     }
 
@@ -74,12 +82,20 @@
   }
   .grid:hover {
     cursor: pointer;
-    transition-duration: 200ms;
-    background-color: rgb(24, 23, 23);
-    div{
-      background-color:  rgb(24, 23, 23);
-    }
+  border-color: #4db33d;
+  animation: border-color-change 2s infinite;
+    
+    
+
   }
+  @keyframes border-color-change {
+  0%, 100% {
+    border-color: #4db33d00;
+  }
+  50% {
+    border-color: #7e7e7e;
+  }
+}
 }
 
 .hover:hover{
@@ -87,8 +103,9 @@
   .tech{
     transition-delay: 0s;
     transition-duration: 500ms;
-    gap: 60px;
-  
+ 
+
+
   }
 }
 

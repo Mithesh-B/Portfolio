@@ -57,7 +57,7 @@ const AboutMe = ({contact}) => {
           </div>
         </div>
         <div className="desc">
-          Hey there! This is Mithesh! As a <span>front-end developer</span> with a passion
+          Hey there! This is Mithesh! As a <span>full-stack developer</span> with a passion
           for <span> UI design,</span> I'm thrilled to have you here.
           <br />
           <br />
@@ -65,7 +65,7 @@ const AboutMe = ({contact}) => {
           and functional. I have experience building <span>responsive websites, </span>
           creating <span>intuitive user interfaces,</span> and <span>optimizing website
           performance,</span> and I believe that good design is an essential component
-          of great front-end development.
+          of great website.
           <br />
           <br />
           Thank you for stopping by, and I hope you enjoy exploring my

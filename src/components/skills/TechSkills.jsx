@@ -9,7 +9,7 @@ const TechSkills =forwardRef((props, ref) => {
   return (
     <div className="hover">
       <div className="title2" ref={ref}>
-        Technical Skills:
+        Technical Skills
       </div>
       <div className="tech">
         <div className="grid">

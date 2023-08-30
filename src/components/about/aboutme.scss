@@ -75,14 +75,13 @@ html {
       font-family: inherit;
       position: relative;
       width: fit-content;
-      font-weight: 500;
       font-size: 0.9rem;
       color: #e2e2e2;
-      padding: 10px 20px;
-      border-radius: 50px;
+      padding: 10px 10px;
+      border-radius: 10px;
       background-color: #fcfcfc00;
       cursor: pointer;
-      border: 1.5px solid black;
+      border: 1px solid black;
       border-color: #e2e2e2;
       transition: background-color 0.5s;
     }
@@ -109,19 +108,6 @@ html {
         width: 80%;
         height: auto;
         position: relative;
-      }
-    }
-
-    .blinker {
-      color: #e2e2e2;
-      position: absolute;
-      font-size: 0.7rem;
-      top: 60px;
-      left: 185px;
-      display: none;
-
-      span {
-        animation: span 1s infinite;
       }
     }
 
@@ -168,8 +154,8 @@ html {
         height: 350px;
         aspect-ratio: 1;
         position: absolute;
-        left: -60%;
-        top: -90%;
+        left: -30%;
+        top: -50%;
         border-radius: 50%;
         filter: blur(100px);
         z-index: -1;
@@ -188,11 +174,15 @@ html {
       }
 
       .welcome {
-        font-weight: 700;
-        font-size: 3rem;
+ 
+        font-size: 4rem;
         width: 100%;
-  text-transform: lowercase;
+
         overflow-x: hidden;
+      }
+      button{
+   font-size: 1rem;
+
       }
     }
 

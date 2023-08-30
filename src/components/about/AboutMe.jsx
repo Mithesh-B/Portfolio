@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./aboutme.scss";
 
 const AboutMe = ({contact}) => {
@@ -23,9 +23,7 @@ const AboutMe = ({contact}) => {
       <div className="right">
         <div className="container">
           <img className="laptop" src="../me.png" alt="a laptop" />
-          <div className="blinker">
-            &gt;<span className="blink">_</span>
-          </div>
+     
         </div>
         <div className="desc">
           Hey there! This is Mithesh! As a <span>full-stack developer</span>{" "}

@@ -11,7 +11,7 @@ const AboutMe = ({contact}) => {
         <div className="circle2"></div>
         <div className="circle3"></div>
         <h1 className="welcome">
-          Welcome to my <mark className="mark1"> workplace</mark>
+          welcome to my <mark className="mark1"> workplace</mark>
           <mark className="mark2">.</mark>
         </h1>
         <button

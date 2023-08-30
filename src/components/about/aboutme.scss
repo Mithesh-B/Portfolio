@@ -64,10 +64,12 @@ html {
       mark {
         background-color: rgba(102, 51, 153, 0) !important;
         color: #e2e2e2c2;
+        
       }
 
       .mark2 {
         color: #ff804e;
+
       }
     }
 
@@ -76,14 +78,15 @@ html {
       position: relative;
       width: fit-content;
       font-size: 0.9rem;
-      color: #e2e2e2;
+      color: #b4b4b4;
       padding: 10px 10px;
       border-radius: 10px;
       background-color: #fcfcfc00;
       cursor: pointer;
       border: 1px solid black;
-      border-color: #e2e2e2;
+      border-color: #b4b4b4;
       transition: background-color 0.5s;
+      font-weight: 500;
     }
 
     button:hover {
@@ -142,6 +145,10 @@ html {
   .about {
     flex-direction: column;
     align-items: center;
+    gap: 0px;
+
+
+
 
     .left {
       padding-top: 0px;
@@ -175,20 +182,33 @@ html {
 
       .welcome {
  
-        font-size: 4rem;
+        font-size: 3.5rem;
         width: 100%;
 
         overflow-x: hidden;
       }
       button{
-   font-size: 1rem;
+
+   display: none;
 
       }
     }
 
     .right {
+
+      .container {
+      
+
+      .laptop {
+        width: 85%;
+    
+    
+      }
+    }
       .desc {
+       
         margin: 2rem;
+        margin-top: 0rem;
         width: 90vw;
         font-size: 15px;
         font-weight: 400;

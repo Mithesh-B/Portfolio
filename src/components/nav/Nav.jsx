@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import "./nav.scss";
-import MenuOpenRoundedIcon from "@mui/icons-material/MenuOpenRounded";
+
 import ArticleRoundedIcon from "@mui/icons-material/ArticleRounded";
 import AnalyticsRoundedIcon from "@mui/icons-material/AnalyticsRounded";
 import BathroomRoundedIcon from "@mui/icons-material/BathroomRounded";
@@ -89,47 +89,7 @@ const Nav = ({ skill, project }) => {
     </nav>
   );
 
-  return (
-    <nav className="navigation">
-      <div className="left">
-        <div className="name">
-          <h1 className="mainlogo">
-            m<mark className="mark2">.</mark>
-          </h1>
-        </div>
-      </div>
-      <div className="right">
-        <a
-          className="reverse"
-          href="https://drive.google.com/file/d/1KB5p1UdNYjQ3vpNkPWhWiYDsl4QBgZJJ/view?usp=drive_link"
-          target="_blank"
-        >
-          <span className="color1">1. </span>
-          <span className="resume">Resume</span>
-        </a>
-        <div className="reverse">
-          <span className="color2">2. </span>
-          <span
-            onClick={() => skill.current.scrollIntoView({ behavior: "smooth" })}
-            className="skills"
-          >
-            Skills
-          </span>
-        </div>
-        <div className="reverse">
-          <span className="color3">3. </span>
-          <span
-            onClick={() =>
-              project.current.scrollIntoView({ behavior: "smooth" })
-            }
-            className="navprojects"
-          >
-            Projects
-          </span>
-        </div>
-      </div>
-    </nav>
-  );
+ 
 };
 
 export default Nav;

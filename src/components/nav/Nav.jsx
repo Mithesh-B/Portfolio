@@ -24,9 +24,9 @@ const Nav = ({ skill, project }) => {
   };
   return (
     <nav
-      className="navbar"
+      className={`navbar ${showNavbar ? 'navbar-mobile' : ''}`}
       style={{
-        backgroundColor: showNavbar ? "#141414" : "initial",
+        
         transition: "all 0.3s ease-in",
       }}
     >

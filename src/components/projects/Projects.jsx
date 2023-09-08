@@ -54,6 +54,8 @@ const Projects =forwardRef((props, ref) => {
               An e-commerce website built with React for frontend and strapi
               headless CMS for creating REST API and backend content management.
               Global state management is handled by redux toolkit.
+              Unfortunately, a live link is not available due to the high costs
+              of CMS hosting.
             </div>
             <br />
             <div className="links">

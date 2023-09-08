@@ -155,6 +155,42 @@ const Projects =forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[3] = el)}>
+            <div className="zero">01 HTML</div>
+            <div className="one">02 CSS</div>
+            <div className="two">03 JavaScript</div>
+            <h1 className="title_p">Prints.</h1>
+            <div className="description">
+              Oh, this one's just a landing page. It doesn't really do much
+              apart from showcasing my frontend and design skills. The page is
+              about buying and selling your digital art and customizing it as
+              wall posters.
+            </div>
+            <br />
+            <div className="links">
+              <a
+                className="source"
+                href="https://github.com/Mithesh-B/prints"
+                target="_blank"
+              >
+                <GitHubIcon />
+                Source
+              </a>
+              <a
+                className="demo"
+                href="https://prints-5rp.pages.dev/"
+                target="_blank"
+              >
+                <PublicIcon />
+                Live link
+              </a>
+            </div>
+          </div>
+          <div className="image" ref={(el) => (imageRefs.current[3] = el)}>
+            <img loading="lazy" src="../project5.png" alt="a laptop" />
+          </div>
+        </div>
+        <div className="projectstop">
+          <div className="project" ref={(el) => (projectRefs.current[4] = el)}>
             <div className="zero">01 React.js</div>
             <div className="one">02 Next.js</div>
             <div className="two">03 SCSS</div>
@@ -186,8 +222,8 @@ const Projects =forwardRef((props, ref) => {
               </a>
             </div>
           </div>
-          <div className="image" ref={(el) => (imageRefs.current[3] = el)}>
-            <img loading="lazy"  src="../project4.png" alt="a laptop" />
+          <div className="image" ref={(el) => (imageRefs.current[4] = el)}>
+            <img loading="lazy" src="../project4.png" alt="a laptop" />
           </div>
         </div>
       </div>

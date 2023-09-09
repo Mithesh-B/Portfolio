@@ -1,50 +1,44 @@
-import React from 'react';
-import Nav from './components/nav/Nav';
-import AboutMe from './components/about/AboutMe'
+import React from "react";
+import Nav from "./components/nav/Nav";
+import AboutMe from "./components/about/AboutMe";
 import TechSkills from "./components/skills/TechSkills";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import './app.scss'
-import { useState, useEffect, useRef } from 'react';
-
-
+import "./app.scss";
+import { useState, useEffect, useRef } from "react";
+import "../node_modules/locomotive-scroll/bundled/locomotive-scroll.css";
+import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
+  const isTabletOrMobile = () => {
 
-  const contact= useRef(null);
-  const skills= useRef(null);
-  const projects= useRef(null);
+    return window.innerWidth <= 1189;
 
-  
-  const [coords, setCoords] = useState({ x: 0, y: 0 });
+  };
+
+  let locomotiveScroll;
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setCoords({ x: e.pageX, y: e.pageY });
-    };
-
-    document.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
+    if (!isTabletOrMobile()) {
+   
+      locomotiveScroll = new LocomotiveScroll();
+    }
   }, []);
-  
+
+  const contact = useRef(null);
+  const skills = useRef(null);
+  const projects = useRef(null);
+
+
   return (
-    <div className='test2'>
-      <div
-      className='blob'
-      style={{
-        transform: `translate3d(${coords.x - 870}px, ${coords.y - 500}px, 0)`,
-      }}
-    ></div>
+    <div className="test2">
       <Nav skill={skills} project={projects} />
       <AboutMe contact={contact} />
-      <TechSkills ref={skills}/>
-      <Projects ref={projects}/>
-      <Contact ref={contact}/>
+      <TechSkills ref={skills} />
+      <Projects ref={projects} />
+      <Contact ref={contact} />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

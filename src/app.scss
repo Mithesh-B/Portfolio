@@ -3,6 +3,7 @@ html {
   background-color: #0e0e0e;
   color: #e2e2e2;
   overflow-x: hidden;
+    scroll-behavior: smooth;
   --scrollbarBG: #4d4d4d88;
   --thumbBG: #738086;
 }
@@ -25,26 +26,6 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG) ;
   border-radius: 6px;
   border: 2px solid var(--scrollbarBG);
-}
-
-
-.blob {
-  background-color: aliceblue;
-  background: linear-gradient(
-    to right,
-    rgba(250, 105, 161, 0.562),
-    rgba(6, 130, 202, 0.466),
-        rgba(31, 145, 8, 0.466)
-  );
-  height: 300px;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transition: transform 0.6s ease-out;
-  border-radius: 50%;
-  filter: blur(70px);
-  z-index: -1;
 }
 
 @media only screen and (max-width: 688px) {

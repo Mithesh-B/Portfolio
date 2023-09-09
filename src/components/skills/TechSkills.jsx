@@ -1,10 +1,12 @@
 import React from 'react'
 import './techskills.scss'
-import { forwardRef } from 'react';
+import { forwardRef, useEffect, useRef } from 'react';
 
 
 
-const TechSkills =forwardRef((props, ref) => {
+
+const TechSkills = forwardRef((props, ref) => {
+  
 
   return (
     <div className="hover">
@@ -12,7 +14,7 @@ const TechSkills =forwardRef((props, ref) => {
         Technical Skills
       </div>
       <div className="tech">
-        <div className="grid">
+        <div data-scroll data-scroll-speed="0.2" className="grid">
           <div className="html">HTML</div>
           <div className="body">
             HTML is a standard markup language used to create and structure
@@ -36,7 +38,7 @@ const TechSkills =forwardRef((props, ref) => {
           </div>
         </div>
 
-        <div className="grid">
+        <div data-scroll data-scroll-speed="0.2" className="grid">
           <div className="css">CSS</div>
           <div className="body">
             It is a stylesheet language used for describing the presentation of
@@ -44,7 +46,7 @@ const TechSkills =forwardRef((props, ref) => {
             animations.
           </div>
         </div>
-        <div className="grid">
+        <div data-scroll data-scroll-speed="0.3" className="grid">
           <div className="react">React.js</div>
           <div className="body">
             React.js is an open-source JavaScript library used for building user
@@ -68,7 +70,7 @@ const TechSkills =forwardRef((props, ref) => {
             creating reducers, and handling immutable updates.
           </div>
         </div>
-        <div className="grid">
+        <div data-scroll data-scroll-speed="0.3" className="grid">
           <div className="strapi">Strapi CMS</div>
           <div className="body">
             Strapi is a headless CMS that allows developers to create, manage,

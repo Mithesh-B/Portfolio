@@ -7,13 +7,14 @@ import PublicIcon from '@mui/icons-material/Public';
 import { forwardRef } from 'react'
 
 
-
-const Projects =forwardRef((props, ref) => {
+const Projects = forwardRef((props, ref) => {
 
   const projectRefs = useRef([]);
   const imageRefs = useRef([]);
 
   useEffect(() => {
+
+
     const handleScroll = () => {
       projectRefs.current.forEach((project, index) => {
         const projectTop = project.offsetTop;
@@ -49,7 +50,9 @@ const Projects =forwardRef((props, ref) => {
             <div className="one">02 Redux toolkit</div>
             <div className="two">03 Strapi CMS</div>
             <div className="three">04 SCSS</div>
-            <h1 className="title_p">Starzzy.</h1>
+            <h1 data-scroll data-scroll-speed="0.02" className="title_p">
+              Starzzy.
+            </h1>
             <div className="description">
               An e-commerce website built with React for frontend and strapi
               headless CMS for creating REST API and backend content management.
@@ -87,7 +90,9 @@ const Projects =forwardRef((props, ref) => {
             <div className="zero">02 CSS</div>
             <div className="zero">03 JavaScript</div>
             <div className="zero">04 Prism.js</div>
-            <h1 className="title_p">Gradart.</h1>
+            <h1 data-scroll data-scroll-speed="0.02" className="title_p">
+              Gradart.
+            </h1>
             <div className="description">
               GradArt is a responsive CSS color gradient generator that enables
               users to easily create custom gradients by providing a CSS code
@@ -160,7 +165,9 @@ const Projects =forwardRef((props, ref) => {
             <div className="zero">01 HTML</div>
             <div className="one">02 CSS</div>
             <div className="two">03 JavaScript</div>
-            <h1 className="title_p">Prints.</h1>
+            <h1 data-scroll data-scroll-speed="0.02" className="title_p">
+              Prints.
+            </h1>
             <div className="description">
               Oh, this one's just a landing page. It doesn't really do much
               apart from showcasing my frontend and design skills. The page is
@@ -197,7 +204,7 @@ const Projects =forwardRef((props, ref) => {
             <div className="one">02 Next.js</div>
             <div className="two">03 SCSS</div>
             <div className="two">04 Chart.js</div>
-            <h1 className="title_p">Board.</h1>
+            <h1 data-scroll data-scroll-speed="0.02" className="title_p">Board.</h1>
             <div className="description">
               Board is a modern and user-friendly desktop dashboard application
               built with React and Next.js. It uses interactive line and pie

@@ -3,27 +3,32 @@ import "./aboutme.scss";
 
 const AboutMe = ({contact}) => {
   
-
-
   return (
     <div className="about">
       <div className="left">
         <div className="circle2"></div>
         <div className="circle3"></div>
-        <h1 className="welcome">
+        <h1 data-scroll data-scroll-speed="0.2" className="welcome">
           welcome to my <mark className="mark1"> workplace</mark>
           <mark className="mark2">.</mark>
         </h1>
         <button
+          data-scroll
+          data-scroll-speed="0.1"
           onClick={() => contact.current.scrollIntoView({ behavior: "smooth" })}
         >
           &lt;build me a website/&gt;
         </button>
       </div>
-      <div className="right">
+      <div data-scroll data-scroll-speed="0.4" className="right">
         <div className="container">
-          <img className="laptop" src="../me.png" alt="a laptop" />
-     
+          <img
+            data-scroll
+            data-scroll-speed="0.1"
+            className="laptop"
+            src="../me.png"
+            alt="a laptop"
+          />
         </div>
         <div className="desc">
           Hey there! This is Mithesh! As a <span>full-stack developer</span>{" "}

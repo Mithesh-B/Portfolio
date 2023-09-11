@@ -186,7 +186,7 @@ const Projects = forwardRef((props, ref) => {
               </a>
               <a
                 className="demo"
-                href="https://prints-5rp.pages.dev/"
+                href="https://mithesh-b.github.io/prints/"
                 target="_blank"
               >
                 <PublicIcon />
@@ -204,7 +204,9 @@ const Projects = forwardRef((props, ref) => {
             <div className="one">02 Next.js</div>
             <div className="two">03 SCSS</div>
             <div className="two">04 Chart.js</div>
-            <h1 data-scroll data-scroll-speed="0.02" className="title_p">Board.</h1>
+            <h1 data-scroll data-scroll-speed="0.02" className="title_p">
+              Board.
+            </h1>
             <div className="description">
               Board is a modern and user-friendly desktop dashboard application
               built with React and Next.js. It uses interactive line and pie

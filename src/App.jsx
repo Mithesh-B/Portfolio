@@ -29,7 +29,7 @@ const App = () => {
     // Simulate a delay (you can replace this with actual data loading)
     setTimeout(() => {
       setIsLoaded(true);
-    }, 500); // Adjust the delay as needed
+    }, 200); // Adjust the delay as needed
   }, []);
 
   const contact = useRef(null);

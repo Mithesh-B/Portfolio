@@ -1,5 +1,3 @@
-
-
 .title2 {
   margin-top: 10rem;
   font-weight: 600;
@@ -13,15 +11,12 @@
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(2, 250px);
   justify-content: center;
-  gap:12px;
+  gap: 12px;
   transition-duration: 500ms;
-
-  
 
   div {
     transition: transform 0.25s ease-in-out;
-         background-color: #1a1a1a;
-         
+    background-color: #1a1a1a;
   }
 
   .grid {
@@ -31,10 +26,8 @@
     border: 1px solid;
     border-color: rgb(48, 48, 48);
     border-radius: 3px;
-      transition: border-color 0.3s ease;
-            transition: background-color .5s;
-
-
+    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.7s ease;
 
     .body {
       font-weight: 300;
@@ -42,19 +35,23 @@
       text-align: left;
       padding-top: 1rem;
       padding-bottom: 1rem;
-       background-color: #0e0e0e00;
-       color: #c9c6c6;
-      
+      background-color: #0e0e0e00;
+      color: #c9c6c6;
     }
 
-    .html,.js,.node,.react,.redux,.mongo,.strapi,.css{
+    .html,
+    .js,
+    .node,
+    .react,
+    .redux,
+    .mongo,
+    .strapi,
+    .css {
       font-weight: 700;
-             background-color: #0e0e0e00;
-             
+      background-color: #0e0e0e00;
     }
 
     .html {
-
       color: rgb(236, 144, 108);
     }
 
@@ -72,7 +69,7 @@
       color: rgb(102, 129, 218);
     }
     .mongo {
-      color:#4db33d;
+      color: #4db33d;
     }
     .redux {
       color: rgb(178, 133, 230);
@@ -81,57 +78,83 @@
       color: rgb(101, 245, 185);
     }
   }
+  .grid1:hover {
+          z-index: 3;
+    box-shadow: 0 20px 100px rgba(252, 55, 6, 0.13),
+      0 20px 50px rgba(230, 78, 8, 0.11),
+      -40px -20px 90px rgba(0, 200, 250, 0.15),
+      40px 20px 90px rgba(120, 120, 255, 0.15);
+  }
+  //   .grid2:hover {
+  //           z-index: 3;
+  //   box-shadow: 0 20px 100px rgba(227, 252, 6, 0.144),
+  //     0 20px 50px rgba(208, 230, 8, 0.13),
+  //     -40px -20px 90px rgba(0, 200, 250, 0.15),
+  //     40px 20px 90px rgba(120, 120, 255, 0.15);
+  // }
+  //   .grid3:hover {
+  //           z-index: 3;
+  //   box-shadow: 0 20px 100px rgba(6, 252, 68, 0.13),
+  //     0 20px 50px rgba(78, 230, 8, 0.116),
+  //     -40px -20px 90px rgba(0, 200, 250, 0.15),
+  //     40px 20px 90px rgba(120, 120, 255, 0.15);
+  // }
+  //   .grid4:hover {
+  //           z-index: 3;
+  //   box-shadow: 0 20px 100px rgba(6, 162, 252, 0.089),
+  //     0 20px 50px rgba(8, 230, 163, 0.089),
+  //     -40px -20px 90px rgba(0, 200, 250, 0.15),
+  //     40px 20px 90px rgba(120, 120, 255, 0.15);
+  // }
+ 
+  //   .grid7:hover {
+  //     z-index: 3;
+  //   box-shadow: 0 20px 100px rgba(121, 6, 252, 0.13),
+  //     0 20px 50px rgba(123, 8, 230, 0.123),
+  //     -40px -20px 90px rgba(0, 200, 250, 0.15),
+  //     40px 20px 90px rgba(120, 120, 255, 0.15);
+  // }
+  
   .grid:hover {
-  cursor: pointer;
-  background-color: #1a1a1ab7;
-  animation: border-color-change 2s infinite;
-    
-    
-
+    cursor: pointer;
+    background-color: #1a1a1ab7;
+    animation: border-color-change 2s infinite;
   }
   @keyframes border-color-change {
-  0%, 100% {
-    border-color: #4db33d00;
-  }
-  50% {
-    border-color: #7e7e7e8c;
+    0%,
+    100% {
+      border-color: #4db33d00;
+    }
+    50% {
+      border-color: #7e7e7e8c;
+    }
   }
 }
-}
 
-.hover:hover{
-
-  .tech{
+.hover:hover {
+  .tech {
     transition-delay: 0s;
     transition-duration: 500ms;
- 
-
-
   }
 }
 
-
 @media only screen and (max-width: 688px) {
-
-  .hover:hover{
-
-    .tech{
+  .hover:hover {
+    .tech {
       gap: 1rem;
-    
     }
   }
   .title2 {
     margin-top: 3rem;
     font-size: 1.5rem;
-    
   }
   .tech {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-  .tech::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .tech::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
 
   .tech {
     overflow-x: auto;
@@ -140,49 +163,35 @@
     grid-template-rows: repeat(2, auto);
 
     min-width: 10px;
-    justify-content:start;
+    justify-content: start;
     margin: 1.2rem;
     gap: 1rem;
 
+    .grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      outline-offset: -2px;
+      outline: none;
+      border-radius: 5px;
 
-    .grid{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        outline-offset: -2px;
-        outline: none;
-        border-radius: 5px;
-        
-  
-
-        
-        .body{
-          font-weight: 400;
-        }
-        
+      .body {
+        font-weight: 400;
+      }
     }
-
   }
 }
 
 @media only screen and (min-width: 688px) {
-  
-
-
   .tech {
     grid-template-columns: repeat(2, 40vw);
     grid-template-rows: repeat(4, auto);
-
   }
 }
 
 @media only screen and (min-width: 1190px) {
-  
-
-
   .tech {
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(2, auto);
-
   }
 }

@@ -44,7 +44,7 @@ const Projects = forwardRef((props, ref) => {
         Projects I've worked on
       </h1>
       <div className="mobile">
-        <div className="projectstop">
+        <div className="projectstop p1">
           <div className="project" ref={(el) => (projectRefs.current[0] = el)}>
             <div className="zero">01 React.js</div>
             <div className="one">02 Redux toolkit</div>

@@ -10,15 +10,14 @@ html {
 body {
   overflow-x: hidden;
   margin: 1px;
+    scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 body::-webkit-scrollbar {
   width: 9px;
 
 }
-body {
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-}
+
 body::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
@@ -26,6 +25,15 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG) ;
   border-radius: 6px;
   border: 2px solid var(--scrollbarBG);
+}
+
+.fade-in-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-container.loaded {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 688px) {

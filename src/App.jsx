@@ -37,7 +37,10 @@ const App = () => {
   const projects = useRef(null);
 
   return (
-    <div className={`fade-in-container ${isLoaded ? "loaded" : ""}`}>
+    <div
+    
+      className={`fade-in-container ${isLoaded ? "loaded" : ""}`}
+    >
       <Nav skill={skills} project={projects} />
       <AboutMe contact={contact} />
       <TechSkills ref={skills} />

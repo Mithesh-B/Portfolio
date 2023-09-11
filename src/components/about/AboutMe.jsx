@@ -35,12 +35,10 @@ const AboutMe = ({contact}) => {
           with a passion for <span> UI design,</span> I'm thrilled to have you
           here.
           <br />
-          <br />I strive to deliver top-quality work that is both visually
-          stunning and functional. I have experience building{" "}
+          <br />I have experience building{" "}
           <span>responsive websites, </span>
           creating <span>intuitive user interfaces,</span> and{" "}
-          <span>optimizing website performance,</span> and I believe that good
-          design is an essential component of great website.
+          <span>optimizing website performance.</span>
           <br />
           <br />
           Thank you for stopping by, and I hope you enjoy exploring my

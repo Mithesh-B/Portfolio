@@ -89,7 +89,7 @@ const Projects = forwardRef((props, ref) => {
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[1] = el)}>
             <div className="techstack">
-              <div className="zero">01 HTML</div>
+              <div className="zero">01 HTML5</div>
               <div className="zero">02 CSS</div>
               <div className="zero">03 JavaScript</div>
               <div className="zero">04 Prism.js</div>
@@ -169,9 +169,10 @@ const Projects = forwardRef((props, ref) => {
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[3] = el)}>
             <div className="techstack">
-              <div className="zero">01 HTML</div>
+              <div className="zero">01 HTML5</div>
               <div className="one">02 CSS</div>
               <div className="two">03 JavaScript</div>
+              <div className="three">04 PHP</div>
             </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p">
               Prints.

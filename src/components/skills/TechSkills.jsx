@@ -1,6 +1,7 @@
 import React from 'react'
 import './techskills.scss'
 import { forwardRef, useEffect, useRef } from 'react';
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 
 
@@ -15,14 +16,42 @@ const TechSkills = forwardRef((props, ref) => {
       </div>
       <div className="tech">
         <div data-scroll data-scroll-speed="0.2" className="grid grid1">
-          <div className="html">HTML</div>
+          <div className="skill-title">
+            <div className="html">HTML</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "5px",
+                backgroundColor: "#1a1a1a00",
+              }}
+            >
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                learn more
+              </a>
+              <OpenInNewIcon style={{ color: "#e2e2e2c2", fontSize: "1rem" }} />
+            </div>
+          </div>
           <div className="body">
             HTML is a standard markup language used to create and structure
             content on the web.
           </div>
         </div>
         <div className="grid grid1">
-          <div className="js">JavaScript</div>
+          <div className="skill-title">
+            <div className="js">JavaScript</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "5px",
+                backgroundColor: "#1a1a1a00",
+              }}
+            >
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                learn more
+              </a>
+              <OpenInNewIcon style={{ color: "#e2e2e2c2", fontSize: "1rem" }} />
+            </div>
+          </div>
           <div className="body">
             JavaScript is a programming language used for creating interactive
             and dynamic web pages. It is widely used for both client-side and
@@ -30,7 +59,19 @@ const TechSkills = forwardRef((props, ref) => {
           </div>
         </div>
         <div className="grid grid1">
-          <div className="node">Node.js</div>
+          <div className="skill-title">
+            <div className="node">Node.js</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "5px",
+                backgroundColor: "#1a1a1a00",
+              }}
+            >
+              <a href="https://nodejs.org/en">learn more</a>
+              <OpenInNewIcon style={{ color: "#e2e2e2c2", fontSize: "1rem" }} />
+            </div>
+          </div>
           <div className="body">
             Node.js is an open-source, cross-platform JavaScript runtime
             environment that allows developers to run JavaScript code outside of
@@ -39,7 +80,21 @@ const TechSkills = forwardRef((props, ref) => {
         </div>
 
         <div data-scroll data-scroll-speed="0.2" className="grid grid1">
-          <div className="css">CSS</div>
+          <div className="skill-title">
+            <div className="css">CSS</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "5px",
+                backgroundColor: "#1a1a1a00",
+              }}
+            >
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                learn more
+              </a>
+              <OpenInNewIcon style={{ color: "#e2e2e2c2", fontSize: "1rem" }} />
+            </div>
+          </div>
           <div className="body">
             It is a stylesheet language used for describing the presentation of
             a document written in HTML, including colors, fonts, layouts, and
@@ -47,7 +102,19 @@ const TechSkills = forwardRef((props, ref) => {
           </div>
         </div>
         <div data-scroll data-scroll-speed="0.3" className="grid grid1">
-          <div className="react">React.js</div>
+          <div className="skill-title">
+            <div className="react">React.js</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "5px",
+                backgroundColor: "#1a1a1a00",
+              }}
+            >
+              <a href="https://react.dev/">learn more</a>
+              <OpenInNewIcon style={{ color: "#e2e2e2c2", fontSize: "1rem" }} />
+            </div>
+          </div>
           <div className="body">
             React.js is an open-source JavaScript library used for building user
             interfaces. It allows developers to create reusable UI components
@@ -55,7 +122,19 @@ const TechSkills = forwardRef((props, ref) => {
           </div>
         </div>
         <div className="grid grid1">
-          <div className="mongo">MongoDB</div>
+          <div className="skill-title">
+            <div className="mongo">MongoDB</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "5px",
+                backgroundColor: "#1a1a1a00",
+              }}
+            >
+              <a href="https://www.mongodb.com/">learn more</a>
+              <OpenInNewIcon style={{ color: "#e2e2e2c2", fontSize: "1rem" }} />
+            </div>
+          </div>
           <div className="body">
             MongoDB is a non-relational document database that provides support
             for JSON-like storage. The MongoDB database has a flexible data
@@ -63,7 +142,19 @@ const TechSkills = forwardRef((props, ref) => {
           </div>
         </div>
         <div className="grid grid1">
-          <div className="redux">Redux Toolkit</div>
+          <div className="skill-title">
+            <div className="redux">Redux Toolkit</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "5px",
+                backgroundColor: "#1a1a1a00",
+              }}
+            >
+              <a href="https://redux-toolkit.js.org/">learn more</a>
+              <OpenInNewIcon style={{ color: "#e2e2e2c2", fontSize: "1rem" }} />
+            </div>
+          </div>
           <div className="body">
             Redux Toolkit is an official package from the Redux team that
             simplifies common Redux use cases with utilities for store setup,
@@ -71,7 +162,19 @@ const TechSkills = forwardRef((props, ref) => {
           </div>
         </div>
         <div data-scroll data-scroll-speed="0.3" className="grid grid1">
-          <div className="strapi">Strapi CMS</div>
+          <div className="skill-title">
+            <div className="strapi">Strapi CMS</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "5px",
+                backgroundColor: "#1a1a1a00",
+              }}
+            >
+              <a href="https://strapi.io/">learn more</a>
+              <OpenInNewIcon style={{ color: "#e2e2e2c2", fontSize: "1rem" }} />
+            </div>
+          </div>
           <div className="body">
             Strapi is a headless CMS that allows developers to create, manage,
             and distribute content for their web applications. It provides a

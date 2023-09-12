@@ -97,9 +97,7 @@ const Contact = forwardRef((props, ref) => {
               <button type="submit">
                 {isSubmitted ? "Thank you!" : "Submit"}
               </button>
-              <div className="copyright">
-                © 2023 Mithesh. All rights reserved.
-              </div>
+              <div className="copyright">© 2023, Designed & Built with React by Mithesh</div>
             </form>
           </div>
         </div>

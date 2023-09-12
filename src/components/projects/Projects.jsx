@@ -50,7 +50,7 @@ const Projects = forwardRef((props, ref) => {
             <div className="one">02 Redux toolkit</div>
             <div className="two">03 Strapi CMS</div>
             <div className="three">04 SCSS</div>
-            <h1 data-scroll data-scroll-speed="0.02" className="title_p">
+            <h1 data-scroll data-scroll-speed="0.02" className="title_p rev">
               Starzzy.
             </h1>
             <div className="description">

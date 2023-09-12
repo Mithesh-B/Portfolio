@@ -20,14 +20,29 @@
   }
 
   .grid {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    border: 1px solid;
-    border-color: rgb(48, 48, 48);
-    border-radius: 3px;
+   padding: 1.2rem;
+
+    border-radius: 5px;
     transition: border-color 0.3s ease;
     transition: border-color 0.3s ease, box-shadow 0.7s ease;
+
+    .skill-title{
+      background-color: #1a1a1a00;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      a{
+        font-size: 0.8rem;
+          text-decoration: none;
+          color: #e2e2e2c2;
+
+          &:hover{
+            color: #e2e2e2;
+          }
+      }
+
+    }
 
     .body {
       font-weight: 300;
@@ -47,36 +62,13 @@
     .mongo,
     .strapi,
     .css {
+      color: #e2e2e2c2;
       font-weight: 700;
       background-color: #0e0e0e00;
     }
+    
 
-    .html {
-      color: rgb(236, 144, 108);
-    }
 
-    .js {
-      color: rgb(232, 235, 102);
-    }
-    .node {
-      color: rgb(106, 223, 121);
-    }
-    .react {
-      color: rgb(124, 172, 226);
-    }
-
-    .css {
-      color: rgb(102, 129, 218);
-    }
-    .mongo {
-      color: #4db33d;
-    }
-    .redux {
-      color: rgb(178, 133, 230);
-    }
-    .strapi {
-      color: rgb(101, 245, 185);
-    }
   }
   .grid1:hover {
           z-index: 3;
@@ -118,17 +110,10 @@
   .grid:hover {
     cursor: pointer;
     background-color: #1a1a1ab7;
-    animation: border-color-change 2s infinite;
+    
+ 
   }
-  @keyframes border-color-change {
-    0%,
-    100% {
-      border-color: #4db33d00;
-    }
-    50% {
-      border-color: #7e7e7e8c;
-    }
-  }
+
 }
 
 .hover:hover {

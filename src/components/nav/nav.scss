@@ -15,8 +15,8 @@
 }
 
 .logo {
-  font-size: 3rem;
-  padding-bottom: 15px;
+  font-size: 2.5rem;
+  padding-bottom: 7px;
   mark {
     background-color: rgba(102, 51, 153, 0) !important;
     color: #e2e2e2c2;
@@ -73,6 +73,10 @@
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
   }
+
+  .logo{
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -88,7 +92,7 @@
     left: 91%;
     transform: translate(-50%, -50%);
     position: absolute;
-    width: 25px;
+    width: 20px;
   }
 
   .center:before,
@@ -97,22 +101,22 @@
     background: #e2e2e2c2;
     content: "";
     display: block;
-    height: 4px;
+    height: 3px;
     border-radius: 3px;
-    margin: 5px 0;
+    margin: 4px 0;
     transition: 0.5s;
   }
 
   .center div {
-    width: 15px;
+    width: 12px;
   }
 
   .center.clicked:before {
-    transform: translateY(8px) rotate(135deg);
+    transform: translateY(5px) rotate(135deg);
   }
 
   .center.clicked:after {
-    transform: translateY(-10px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
   }
 
   .center.clicked div {
@@ -145,7 +149,7 @@
 
   .nav-elements ul li {
     margin-top: 22px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #e2e2e2c2;
     margin-right: 30px;
     padding-bottom: 1rem;
@@ -155,7 +159,7 @@
   .nav-elements ul a {
     margin-right: 30px;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #e2e2e2c2;
   }
 }

@@ -148,8 +148,8 @@ const AboutMe = ({ contact }) => {
           Hey there! This is Mithesh! As a <span>full-stack developer</span>{" "}
           with a passion for <span> UI design,</span> I'm thrilled to have you
           here.
-          <br />
-          <br />I have experience building <span>responsive websites, </span>
+         
+          I have experience building <span>responsive websites, </span>
           creating <span>intuitive user interfaces,</span> and{" "}
           <span>optimizing website performance.</span>
           <br />

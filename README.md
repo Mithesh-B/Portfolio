@@ -3,5 +3,6 @@ A beautiful portfolio website handcrafted with react and vite.
 
 live preview: https://mshdev.pages.dev/
 
+![scrnli_9_12_2023_10-07-26 AM](https://github.com/Mithesh-B/Portfolio/assets/115478939/9956c893-4464-427b-8fdd-2380cef71a9a)
 
-![scrnli_9_1_2023_3-08-51 PM](https://github.com/Mithesh-B/Portfolio/assets/115478939/7feb00cb-26a3-4546-a16d-691926a88419)
+

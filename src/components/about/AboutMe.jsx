@@ -140,7 +140,7 @@ const AboutMe = ({ contact }) => {
             data-scroll
             data-scroll-speed="0.1"
             className="laptop"
-            src="../me.png"
+            src="../a.png"
             alt="a laptop"
           />
         </div>

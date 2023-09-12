@@ -41,6 +41,22 @@
     padding: 1rem;
     position: relative;
 
+    .techstack{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      div{
+        font-size: 0.8rem;
+        background-color: #6e6e6e34;
+        padding: 6px 10px 6px 10px;
+        border-radius: 10rem;
+        font-weight: 500;
+      }
+   
+     
+    }
+
     .title_p {
       font-size: 50px;
       background: #3d91d2; /* Fallback color */

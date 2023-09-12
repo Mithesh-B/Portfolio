@@ -46,10 +46,12 @@ const Projects = forwardRef((props, ref) => {
       <div className="mobile">
         <div className="projectstop p1">
           <div className="project" ref={(el) => (projectRefs.current[0] = el)}>
-            <div className="zero">01 React.js</div>
-            <div className="one">02 Redux toolkit</div>
-            <div className="two">03 Strapi CMS</div>
-            <div className="three">04 SCSS</div>
+            <div className="techstack">
+              <div className="zero">01 React.js</div>
+              <div className="one">02 Redux toolkit</div>
+              <div className="two">03 Strapi CMS</div>
+              <div className="three">04 SCSS</div>
+            </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p rev">
               Starzzy.
             </h1>
@@ -86,10 +88,12 @@ const Projects = forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[1] = el)}>
-            <div className="zero">01 HTML</div>
-            <div className="zero">02 CSS</div>
-            <div className="zero">03 JavaScript</div>
-            <div className="zero">04 Prism.js</div>
+            <div className="techstack">
+              <div className="zero">01 HTML</div>
+              <div className="zero">02 CSS</div>
+              <div className="zero">03 JavaScript</div>
+              <div className="zero">04 Prism.js</div>
+            </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p">
               Gradart.
             </h1>
@@ -125,11 +129,13 @@ const Projects = forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[2] = el)}>
-            <div className="zero">01 JavaScript</div>
-            <div className="one">02 Node.js</div>
-            <div className="two">03 MongoDB</div>
-            <div className="three">04 Leaflet.js</div>
-            <h1 className="title_p">Safe walk.</h1>
+            <div className="techstack">
+              <div className="zero">01 JavaScript</div>
+              <div className="one">02 Node.js</div>
+              <div className="two">03 MongoDB</div>
+              <div className="three">04 Leaflet.js</div>
+              <h1 className="title_p">Safe walk.</h1>
+            </div>
             <div className="description">
               Safe Walk is a website that allows citizens to log and report
               safety issues and problems encountered in public areas which will
@@ -162,9 +168,11 @@ const Projects = forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[3] = el)}>
-            <div className="zero">01 HTML</div>
-            <div className="one">02 CSS</div>
-            <div className="two">03 JavaScript</div>
+            <div className="techstack">
+              <div className="zero">01 HTML</div>
+              <div className="one">02 CSS</div>
+              <div className="two">03 JavaScript</div>
+            </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p">
               Prints.
             </h1>
@@ -200,10 +208,12 @@ const Projects = forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[4] = el)}>
-            <div className="zero">01 React.js</div>
-            <div className="one">02 Next.js</div>
-            <div className="two">03 SCSS</div>
-            <div className="two">04 Chart.js</div>
+            <div className="techstack">
+              <div className="zero">01 React.js</div>
+              <div className="one">02 Next.js</div>
+              <div className="two">03 SCSS</div>
+              <div className="two">04 Chart.js</div>
+            </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p">
               Board.
             </h1>

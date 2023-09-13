@@ -5,13 +5,11 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
- 
 }
 
 .navbar {
   height: 70px;
   position: relative;
-
 }
 
 .logo {
@@ -29,9 +27,6 @@
 
 .center {
   display: none;
-}
-
-.nav-elements {
 }
 
 .nav-elements ul {
@@ -74,13 +69,12 @@
     margin-right: 30px;
   }
 
-  .logo{
+  .logo {
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 600px) {
-
   .navbar-mobile {
     background-color: #141414;
   }

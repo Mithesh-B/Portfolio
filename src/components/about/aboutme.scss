@@ -9,9 +9,8 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: row;
-gap: 10rem;
+  gap: 10rem;
   align-items: center;
-  
 
   .left {
     margin-top: 0rem;
@@ -64,21 +63,17 @@ gap: 10rem;
       max-width: 550px;
       overflow-x: hidden;
 
-      .welcome-text{
-      color:  #e2e2e2
+      .welcome-text {
+        color: #e2e2e2;
       }
-
-      
 
       mark {
         background-color: rgba(102, 51, 153, 0) !important;
         color: #e2e2e2c2;
-        
       }
 
       .mark2 {
         color: #ff804e;
-
       }
     }
 
@@ -156,17 +151,13 @@ gap: 10rem;
     align-items: center;
     gap: 0px;
 
-
-
-
     .left {
       padding-top: 0px;
       width: 90vw;
       flex-wrap: wrap;
-
+      align-items: center;
 
       .circle2 {
-    
         background: linear-gradient(200deg, #0bc94a2c 0%, #752bec86 100%);
         height: 350px;
         aspect-ratio: 1;
@@ -191,34 +182,26 @@ gap: 10rem;
       }
 
       .welcome {
- margin-top: 1rem;
+        margin-top: 1rem;
         font-size: 3.5rem;
         text-align: center;
         width: 100%;
 
         overflow-x: hidden;
       }
-      button{
-
-   display: none;
-
+      button {
+        display: none;
       }
     }
 
     .right {
-
       .container {
-      
-
-      .laptop {
-        width: 85%;
-        margin-top: -4rem;
-    
-    
+        .laptop {
+          width: 85%;
+          margin-top: -4rem;
+        }
       }
-    }
       .desc {
-       
         margin: 2rem;
         margin-top: 0rem;
         width: 90vw;

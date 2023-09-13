@@ -1,14 +1,9 @@
-import React from 'react'
-import './techskills.scss'
-import { forwardRef, useEffect, useRef } from 'react';
+import React from "react";
+import "./techskills.scss";
+import { forwardRef, useEffect, useRef } from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
-
-
-
 const TechSkills = forwardRef((props, ref) => {
-  
-
   return (
     <div className="hover">
       <div className="title2" ref={ref}>
@@ -186,4 +181,4 @@ const TechSkills = forwardRef((props, ref) => {
   );
 });
 
-export default TechSkills
+export default TechSkills;

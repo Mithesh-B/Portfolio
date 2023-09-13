@@ -10,7 +10,7 @@ import "../node_modules/locomotive-scroll/bundled/locomotive-scroll.css";
 import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
-   const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const isTabletOrMobile = () => {
     return window.innerWidth <= 1189;
   };
@@ -23,10 +23,8 @@ const App = () => {
     }
   }, []);
 
- 
-
   useEffect(() => {
-    // Simulate a delay (you can replace this with actual data loading)
+    // Simulate a delay
     setTimeout(() => {
       setIsLoaded(true);
     }, 200); // Adjust the delay as needed
@@ -37,10 +35,7 @@ const App = () => {
   const projects = useRef(null);
 
   return (
-    <div
-    
-      className={`fade-in-container ${isLoaded ? "loaded" : ""}`}
-    >
+    <div className={`fade-in-container ${isLoaded ? "loaded" : ""}`}>
       <Nav skill={skills} project={projects} />
       <AboutMe contact={contact} />
       <TechSkills ref={skills} />

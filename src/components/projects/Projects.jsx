@@ -1,20 +1,16 @@
-import React from 'react';
-import { useEffect, useRef } from 'react';
-import './projects.scss';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import PublicIcon from '@mui/icons-material/Public';
-import { forwardRef } from 'react'
-
+import React from "react";
+import { useEffect, useRef } from "react";
+import "./projects.scss";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import PublicIcon from "@mui/icons-material/Public";
+import { forwardRef } from "react";
 
 const Projects = forwardRef((props, ref) => {
-
   const projectRefs = useRef([]);
   const imageRefs = useRef([]);
 
   useEffect(() => {
-
-
     const handleScroll = () => {
       projectRefs.current.forEach((project, index) => {
         const projectTop = project.offsetTop;
@@ -23,20 +19,19 @@ const Projects = forwardRef((props, ref) => {
         const windowHeight = window.innerHeight;
 
         if (scrollTop + windowHeight > projectTop + 100) {
-          project.classList.add('appear');
+          project.classList.add("appear");
         }
 
         if (scrollTop + windowHeight > imageTop + 100) {
-          imageRefs.current[index].classList.add('appear');
+          imageRefs.current[index].classList.add("appear");
         }
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
 
   return (
     <div className="projects">
@@ -134,8 +129,9 @@ const Projects = forwardRef((props, ref) => {
               <div className="one">02 Node.js</div>
               <div className="two">03 MongoDB</div>
               <div className="three">04 Leaflet.js</div>
-              <h1 className="title_p">Safe walk.</h1>
             </div>
+            <h1 className="title_p">Safe walk.</h1>
+
             <div className="description">
               Safe Walk is a website that allows citizens to log and report
               safety issues and problems encountered in public areas which will

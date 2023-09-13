@@ -19,14 +19,13 @@ const Nav = ({ skill, project }) => {
   };
 
   const handleProjectsClick = () => {
-        handleShowNavbar();
+    handleShowNavbar();
     project.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <nav
-      className={`navbar ${showNavbar ? 'navbar-mobile' : ''}`}
+      className={`navbar ${showNavbar ? "navbar-mobile" : ""}`}
       style={{
-        
         transition: "all 0.3s ease-in",
       }}
     >
@@ -88,8 +87,6 @@ const Nav = ({ skill, project }) => {
       </div>
     </nav>
   );
-
- 
 };
 
 export default Nav;

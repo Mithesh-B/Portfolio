@@ -4,6 +4,8 @@ import "./projects.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import PublicIcon from "@mui/icons-material/Public";
+import LaptopRoundedIcon from "@mui/icons-material/LaptopRounded";
+import DevicesRoundedIcon from "@mui/icons-material/DevicesRounded";
 import { forwardRef } from "react";
 
 const Projects = forwardRef((props, ref) => {
@@ -41,15 +43,21 @@ const Projects = forwardRef((props, ref) => {
       <div className="mobile">
         <div className="projectstop p1">
           <div className="project" ref={(el) => (projectRefs.current[0] = el)}>
-            <div className="techstack">
-              <div className="zero">01 React.js</div>
-              <div className="one">02 Redux toolkit</div>
-              <div className="two">03 Strapi CMS</div>
-              <div className="three">04 SCSS</div>
+            <div style={{ display: "flex", gap: "2rem" }}>
+              <div className="techstack">
+                <div className="zero">01 React.js</div>
+                <div className="one">02 Redux toolkit</div>
+                <div className="two">03 Strapi CMS</div>
+                <div className="three">04 SCSS</div>
+              </div>
+              <LaptopRoundedIcon
+                style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+              />
             </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p rev">
               Starzzy.
             </h1>
+
             <div className="description">
               An e-commerce website built with React for frontend and strapi
               headless CMS for creating REST API and backend content management.
@@ -83,11 +91,16 @@ const Projects = forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[1] = el)}>
-            <div className="techstack">
-              <div className="zero">01 HTML5</div>
-              <div className="zero">02 CSS</div>
-              <div className="zero">03 JavaScript</div>
-              <div className="zero">04 Prism.js</div>
+            <div style={{ display: "flex", gap: "2rem" }}>
+              <div className="techstack">
+                <div className="zero">01 HTML5</div>
+                <div className="zero">02 CSS</div>
+                <div className="zero">03 JavaScript</div>
+                <div className="zero">04 Prism.js</div>
+              </div>
+              <DevicesRoundedIcon
+                style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+              />
             </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p">
               Gradart.
@@ -124,11 +137,16 @@ const Projects = forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[2] = el)}>
-            <div className="techstack">
-              <div className="zero">01 JavaScript</div>
-              <div className="one">02 Node.js</div>
-              <div className="two">03 MongoDB</div>
-              <div className="three">04 Leaflet.js</div>
+            <div style={{ display: "flex", gap: "2rem" }}>
+              <div className="techstack">
+                <div className="zero">01 JavaScript</div>
+                <div className="one">02 Node.js</div>
+                <div className="two">03 MongoDB</div>
+                <div className="three">04 Leaflet.js</div>
+              </div>
+              <DevicesRoundedIcon
+                style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+              />
             </div>
             <h1 className="title_p">Safe walk.</h1>
 
@@ -164,11 +182,16 @@ const Projects = forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[3] = el)}>
+            <div style={{ display: "flex", gap: "2rem" , justifyContent: "space-between" }}>
             <div className="techstack">
               <div className="zero">01 HTML5</div>
               <div className="one">02 CSS</div>
               <div className="two">03 JavaScript</div>
               <div className="three">04 PHP</div>
+            </div>
+            <DevicesRoundedIcon
+              style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+            />
             </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p">
               Prints.
@@ -205,11 +228,16 @@ const Projects = forwardRef((props, ref) => {
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[4] = el)}>
-            <div className="techstack">
-              <div className="zero">01 React.js</div>
-              <div className="one">02 Next.js</div>
-              <div className="two">03 SCSS</div>
-              <div className="two">04 Chart.js</div>
+            <div style={{ display: "flex", gap: "2rem" }}>
+              <div className="techstack">
+                <div className="zero">01 React.js</div>
+                <div className="one">02 Next.js</div>
+                <div className="two">03 SCSS</div>
+                <div className="two">04 Chart.js</div>
+              </div>
+              <LaptopRoundedIcon
+                style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+              />
             </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p">
               Board.

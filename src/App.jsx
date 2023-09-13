@@ -9,19 +9,35 @@ import { useState, useEffect, useRef } from "react";
 import "../node_modules/locomotive-scroll/bundled/locomotive-scroll.css";
 import LocomotiveScroll from "locomotive-scroll";
 
+let locomotiveScroll;
+
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const isTabletOrMobile = () => {
-    return window.innerWidth <= 1189;
-  };
-
-  let locomotiveScroll;
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(
+    window.innerWidth <= 1189
+  );
 
   useEffect(() => {
-    if (!isTabletOrMobile()) {
+    const handleResize = () => {
+      setIsMobileOrTablet(window.innerWidth <= 1189);
+    };
+
+    // Attach the event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [window.innerWidth]);
+
+  useEffect(() => {
+    if (!isMobileOrTablet) {
       locomotiveScroll = new LocomotiveScroll();
+    } else if (locomotiveScroll) {
+      window.location.reload();
     }
-  }, []);
+  }, [isMobileOrTablet]);
 
   useEffect(() => {
     // Simulate a delay

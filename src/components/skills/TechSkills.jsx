@@ -2,6 +2,7 @@ import React from "react";
 import "./techskills.scss";
 import { forwardRef, useEffect, useRef } from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import SettingsEthernetRoundedIcon from "@mui/icons-material/SettingsEthernetRounded";
 
 const TechSkills = forwardRef((props, ref) => {
   return (
@@ -9,8 +10,9 @@ const TechSkills = forwardRef((props, ref) => {
       <div className="title2" ref={ref}>
         Technical Skills
       </div>
+
       <div className="tech">
-        <div data-scroll data-scroll-speed="0.2" className="grid grid1">
+        <div data-scroll data-scroll-speed="0.3" className="grid grid1">
           <div className="skill-title">
             <div className="html">HTML</div>
             <div
@@ -74,7 +76,7 @@ const TechSkills = forwardRef((props, ref) => {
           </div>
         </div>
 
-        <div data-scroll data-scroll-speed="0.2" className="grid grid1">
+        <div data-scroll data-scroll-speed="0.3" className="grid grid1">
           <div className="skill-title">
             <div className="css">CSS</div>
             <div
@@ -156,7 +158,7 @@ const TechSkills = forwardRef((props, ref) => {
             creating reducers, and handling immutable updates.
           </div>
         </div>
-        <div data-scroll data-scroll-speed="0.3" className="grid grid1">
+        <div data-scroll data-scroll-speed="0.2" className="grid grid1">
           <div className="skill-title">
             <div className="strapi">Strapi CMS</div>
             <div
@@ -176,6 +178,12 @@ const TechSkills = forwardRef((props, ref) => {
             admin panel and a RESTful API for retrieving and delivering content.{" "}
           </div>
         </div>
+      </div>
+      <div className="mobilescroll" style={{ textAlign: "center"}}>
+        {" "}
+        <SettingsEthernetRoundedIcon
+          style={{ color: "#e2e2e2c2", fontSize: "1.7rem" }}
+        />
       </div>
     </div>
   );

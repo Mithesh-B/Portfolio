@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import "./nav.scss";
 
@@ -8,6 +8,38 @@ import BathroomRoundedIcon from "@mui/icons-material/BathroomRounded";
 
 const Nav = ({ skill, project }) => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    const navbar = document.querySelector(".navbar");
+
+    if (currentScrollPos > prevScrollPos) {
+      // Scrolling down, hide the navbar
+      navbar.style.transform = "translateY(-100%)";
+      navbar.classList.remove("navbar-dark"); // Remove darker background
+    } else {
+      // Scrolling up
+      if (currentScrollPos === 0) {
+        // At the top, make the navbar transparent
+        navbar.classList.remove("navbar-dark");
+      } else {
+        // Not at the top, show the navbar with a darker background
+        navbar.style.transform = "translateY(0)";
+        navbar.classList.add("navbar-dark"); // Add darker background
+      }
+    }
+
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, [prevScrollPos]);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -22,6 +54,10 @@ const Nav = ({ skill, project }) => {
     handleShowNavbar();
     project.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  const handleReloadClick = () => {
+    window.location.reload(); // Reload the page
+  };
   return (
     <nav
       className={`navbar ${showNavbar ? "navbar-mobile" : ""}`}
@@ -30,7 +66,7 @@ const Nav = ({ skill, project }) => {
       }}
     >
       <div className="container">
-        <h1 className="logo">
+        <h1 onClick={handleReloadClick} className="logo">
           m<mark className="mark2">.</mark>
         </h1>
         <div

@@ -1,5 +1,5 @@
 .title2 {
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
@@ -109,6 +109,10 @@
   }
 }
 
+.mobilescroll{
+  display: none;
+}
+
 .hover:hover {
   .tech {
     transition-delay: 0s;
@@ -163,9 +167,13 @@
       }
     }
   }
+  .mobilescroll{
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 688px) {
+ 
   .tech {
     grid-template-columns: repeat(2, 40vw);
     grid-template-rows: repeat(4, auto);
@@ -177,4 +185,5 @@
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(2, auto);
   }
+
 }

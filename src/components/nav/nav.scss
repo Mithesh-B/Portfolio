@@ -8,11 +8,26 @@
 }
 
 .navbar {
+  backdrop-filter: blur(0px);
   height: 70px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(8, 240, 0, 0);
+  transition: background-color 3s ease-out;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar-dark {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 0.849) 0%,
+    rgba(250, 250, 250, 0) 100%
+  );
 }
 
 .logo {
+  cursor: pointer;
   font-size: 2.5rem;
   padding-bottom: 7px;
   mark {

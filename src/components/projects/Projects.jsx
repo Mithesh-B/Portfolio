@@ -200,7 +200,7 @@ const Projects = forwardRef((props, ref) => {
             </div>
           </div>
           <div className="image" ref={(el) => (imageRefs.current[3] = el)}>
-            <img loading="lazy" src="../project5.png" alt="a laptop" />
+            <img loading="lazy" src="../project5.jpg" alt="a laptop" />
           </div>
         </div>
         <div className="projectstop">

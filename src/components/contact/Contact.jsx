@@ -55,6 +55,26 @@ const Contact = forwardRef((props, ref) => {
             <a href="https://github.com/Mithesh-B" target="_blank">
               <GitHubIcon style={{ fontSize: 24, padding: 8 }} />
             </a>
+            <a
+              href="https://codepen.io/Mithesh-B/pens/public"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              target="_blank"
+            >
+              <img
+                className="codepen"
+                style={{
+                  height: "1.3rem",
+                  padding: 8,
+                }}
+                loading="lazy"
+                src="../codepen.svg"
+                alt="codepen"
+              />
+            </a>
           </div>
         </div>
         <div className="right">

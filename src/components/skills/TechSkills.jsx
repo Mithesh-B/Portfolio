@@ -1,8 +1,10 @@
 import React from "react";
 import "./techskills.scss";
-import { forwardRef, useEffect, useRef } from "react";
+import { forwardRef } from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import SettingsEthernetRoundedIcon from "@mui/icons-material/SettingsEthernetRounded";
+import SwipeLeftAltRoundedIcon from "@mui/icons-material/SwipeLeftAltRounded";
+import SwipeRightAltRoundedIcon from "@mui/icons-material/SwipeRightAltRounded";
+
 
 const TechSkills = forwardRef((props, ref) => {
   return (
@@ -179,10 +181,14 @@ const TechSkills = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <div className="mobilescroll" style={{ textAlign: "center"}}>
+      <div className="mobilescroll" style={{ textAlign: "center" }}>
         {" "}
-        <SettingsEthernetRoundedIcon
-          style={{ color: "#e2e2e2c2", fontSize: "1.7rem" }}
+        <SwipeLeftAltRoundedIcon
+          style={{ color: "#e2e2e2c2", fontSize: "1.8rem" }}
+        />
+        <p style={{ fontSize: "0.6rem", fontWeight: "500" }}>SCROLLABLE</p>
+        <SwipeRightAltRoundedIcon
+          style={{ color: "#e2e2e2c2", fontSize: "1.8rem" }}
         />
       </div>
     </div>

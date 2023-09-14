@@ -26,6 +26,7 @@
     position: relative;
     backdrop-filter: blur(200px);
     overflow: hidden;
+    z-index: 22;
 
     .circle {
       position: absolute;
@@ -41,6 +42,7 @@
       top: -30px;
       left: -20px;
       filter: blur(70px);
+      z-index: -1;
     }
 
     .thankyou {
@@ -66,12 +68,6 @@
         background-color: #ffffffea;
         border-radius: 50%;
         color: rgb(29, 29, 29);
-      }
-
-      a:hover {
-        transition-duration: 300ms;
-        background-color: rgba(19, 18, 17, 0);
-        color: rgb(255, 255, 255);
       }
     }
   }

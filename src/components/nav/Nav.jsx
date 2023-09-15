@@ -56,6 +56,7 @@ useEffect(() => {
   };
 
   const handleReloadClick = () => {
+    
     window.location.reload(); // Reload the page
   };
   return (

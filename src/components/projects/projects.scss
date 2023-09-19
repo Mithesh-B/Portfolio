@@ -40,6 +40,7 @@
     font-weight: 400;
     padding: 1rem;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
     .techstack {
       display: flex;
@@ -116,6 +117,7 @@
 
   .image {
     transform: translateX(50%) perspective(800px) rotateY(20deg);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     transform-origin: left;
     img {
       width: 800px;

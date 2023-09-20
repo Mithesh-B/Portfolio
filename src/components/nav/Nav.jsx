@@ -67,9 +67,11 @@ useEffect(() => {
       }}
     >
       <div className="container">
-        <h1 onClick={handleReloadClick} className="logo">
-          m<mark className="mark2">.</mark>
-        </h1>
+        <a>
+          <h1 onClick={handleReloadClick} className="logo">
+            m<mark className="mark2">.</mark>
+          </h1>
+        </a>
         <div
           className={`center ${showNavbar ? "clicked" : ""}`}
           onClick={handleShowNavbar}
@@ -103,7 +105,7 @@ useEffect(() => {
                   fontSize="medium"
                   style={{ color: "#e6accb" }}
                 />{" "}
-                <span style={{ marginLeft: "10px" }}>skills</span>
+                <a style={{ marginLeft: "10px" }}>skills</a>
               </nav>
             </li>
             <li>
@@ -116,7 +118,7 @@ useEffect(() => {
                   fontSize="medium"
                   style={{ color: "#b9e5ff" }}
                 />{" "}
-                <span style={{ marginLeft: "10px" }}>projects</span>
+                <a style={{ marginLeft: "10px" }}>projects</a>
               </nav>
             </li>
           </ul>

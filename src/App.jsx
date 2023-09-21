@@ -8,7 +8,6 @@ import "./app.scss";
 import { useState, useEffect, useRef } from "react";
 import "../node_modules/locomotive-scroll/bundled/locomotive-scroll.css";
 import LocomotiveScroll from "locomotive-scroll";
-import AnimatedCursor from "react-animated-cursor";
 
 let locomotiveScroll;
 
@@ -53,21 +52,6 @@ const App = () => {
 
   return (
     <div className={`fade-in-container ${isLoaded ? "loaded" : ""}`}>
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={35}
-        innerScale={0}
-        outerScale={0}
-        outerAlpha={0}
-        hasBlendMode={true}
-        showSystemCursor={true}
-        innerStyle={{
-          backgroundColor: "#e2e2e2",
-        }}
-        outerStyle={{
-          border: "2px solid #e2e2e2c2",
-        }}
-      />
       <Nav skill={skills} project={projects} />
       <AboutMe contact={contact} />
       <TechSkills ref={skills} />

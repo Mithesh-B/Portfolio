@@ -10,30 +10,38 @@ const Contact = forwardRef((props, ref) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+   e.preventDefault();
 
-    if (!userName || !email || !message) {
-      alert("Please fill in all fields");
-      return;
-    }
-    axios.defaults.headers.post["Content-Type"] = "application/json";
-    axios
-      .post("https://formsubmit.co/ajax/d2f3596103c0fc6d5c76417e80905c46", {
-        name: userName,
-        email: email,
-        message: message,
-      })
-      .then((response) => {
-        console.log(response);
-        setIsSubmitted(true);
-        setName("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch((error) => console.log(error));
-  };
+   if (!userName || !email || !message) {
+     alert("Please fill in all fields");
+     return;
+   }
+
+   // Set isSubmitting to true while the request is being made
+   setIsSubmitting(true);
+
+   axios.defaults.headers.post["Content-Type"] = "application/json";
+   axios
+     .post("https://formsubmit.co/ajax/d2f3596103c0fc6d5c76417e80905c46", {
+       name: userName,
+       email: email,
+       message: message,
+     })
+     .then((response) => {
+       console.log(response);
+       setIsSubmitted(true);
+       setName("");
+       setEmail("");
+       setMessage("");
+     })
+     .catch((error) => console.log(error))
+     .finally(() => {
+       setIsSubmitting(false); // Reset isSubmitting once the request is complete
+     });
+ };
 
   return (
     <div className="contactSection">
@@ -111,8 +119,18 @@ const Contact = forwardRef((props, ref) => {
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
-            <button type="submit">
-              {isSubmitted ? "Thank you!" : "Submit"}
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              style={{
+                color: isSubmitting ? "#e7e7e7" : "#1a1a1a",
+              }}
+            >
+              {isSubmitting
+                ? "Magic in progress"
+                : isSubmitted
+                ? "Thank you!"
+                : "Submit"}
             </button>
             <div className="copyright">
               © 2023, Designed & Built with React by Mithesh

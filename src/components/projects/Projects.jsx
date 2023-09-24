@@ -86,7 +86,12 @@ const Projects = forwardRef((props, ref) => {
             </div>
           </div>
           <div className="image" ref={(el) => (imageRefs.current[0] = el)}>
-            <img loading="lazy" src="../project1.jpg" alt="a laptop" />
+            <img
+              loading="lazy"
+              src="../project1.webp"
+              alt="project img"
+              fetchpriority="low"
+            />
           </div>
         </div>
         <div className="projectstop">
@@ -132,7 +137,12 @@ const Projects = forwardRef((props, ref) => {
             </div>
           </div>
           <div className="image" ref={(el) => (imageRefs.current[1] = el)}>
-            <img loading="lazy" src="../project2.jpg" alt="a laptop" />
+            <img
+              loading="lazy"
+              src="../project2.webp"
+              alt="project img"
+              fetchpriority="low"
+            />
           </div>
         </div>
         <div className="projectstop">
@@ -177,21 +187,32 @@ const Projects = forwardRef((props, ref) => {
             </div>
           </div>
           <div className="image" ref={(el) => (imageRefs.current[2] = el)}>
-            <img loading="lazy" src="../project3.jpg" alt="a laptop" />
+            <img
+              loading="lazy"
+              src="../project3.webp"
+              alt="project img"
+              fetchpriority="low"
+            />
           </div>
         </div>
         <div className="projectstop">
           <div className="project" ref={(el) => (projectRefs.current[3] = el)}>
-            <div style={{ display: "flex", gap: "2rem" , justifyContent: "space-between" }}>
-            <div className="techstack">
-              <div className="zero">01 HTML5</div>
-              <div className="one">02 CSS</div>
-              <div className="two">03 JavaScript</div>
-              <div className="three">04 PHP</div>
-            </div>
-            <DevicesRoundedIcon
-              style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
-            />
+            <div
+              style={{
+                display: "flex",
+                gap: "2rem",
+                justifyContent: "space-between",
+              }}
+            >
+              <div className="techstack">
+                <div className="zero">01 HTML5</div>
+                <div className="one">02 CSS</div>
+                <div className="two">03 JavaScript</div>
+                <div className="three">04 PHP</div>
+              </div>
+              <DevicesRoundedIcon
+                style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+              />
             </div>
             <h1 data-scroll data-scroll-speed="0.02" className="title_p">
               Prints.
@@ -223,7 +244,12 @@ const Projects = forwardRef((props, ref) => {
             </div>
           </div>
           <div className="image" ref={(el) => (imageRefs.current[3] = el)}>
-            <img loading="lazy" src="../project5.jpg" alt="a laptop" />
+            <img
+              loading="lazy"
+              src="../project5.webp"
+              alt="project img"
+              fetchpriority="low"
+            />
           </div>
         </div>
         <div className="projectstop">
@@ -269,7 +295,12 @@ const Projects = forwardRef((props, ref) => {
             </div>
           </div>
           <div className="image" ref={(el) => (imageRefs.current[4] = el)}>
-            <img loading="lazy" src="../project4.png" alt="a laptop" />
+            <img
+              loading="lazy"
+              src="../project4.webp"
+              alt="project img"
+              fetchpriority="low"
+            />
           </div>
         </div>
       </div>

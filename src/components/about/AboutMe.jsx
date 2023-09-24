@@ -140,8 +140,9 @@ const AboutMe = ({ contact }) => {
             data-scroll
             data-scroll-speed="0.1"
             className="laptop"
-            src="../a.png"
+            src="../a.webp"
             alt="a laptop"
+            fetchpriority="high"
           />
         </div>
         <div className="desc">

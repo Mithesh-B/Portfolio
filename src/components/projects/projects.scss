@@ -27,41 +27,18 @@
         align-items: center;
         gap: 5px;
 
+        .icon {
+          cursor: pointer;
+          margin-top: 6px;
+          font-size: 1.5rem;
+        }
+
         .show-more {
           font-family: inherit;
           font-weight: 500;
           font-size: 1.1rem;
-          padding-bottom: 2px;
-          position: relative;
-          overflow: hidden;
           width: fit-content;
           cursor: pointer;
-        }
-        .show-more::after {
-          content: "";
-          display: block;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-
-          width: 100%;
-          height: 2px;
-          background: linear-gradient(
-            90deg,
-            transparent,
-            #777777,
-            transparent
-          ); /* Gradient line */
-          animation: moveBorder 3s linear infinite; /* Animation */
-        }
-
-        @keyframes moveBorder {
-          0% {
-            left: -100%; /* Initial position to the left */
-          }
-          100% {
-            left: 100%; /* Moves to the right */
-          }
         }
       }
     }
@@ -217,11 +194,22 @@
       gap: 16rem;
 
       .btn-container {
-        margin-top: -9rem;
+        margin-top: -9.5rem;
 
         .btn-content {
           width: 90vw;
           min-width: 90vw;
+          gap: 3px;
+
+        .icon {
+          cursor: pointer;
+          margin-top: 3px;
+          font-size: 1rem;
+        }
+
+          .show-more {
+            font-size: 0.8rem;
+          }
         }
       }
     }

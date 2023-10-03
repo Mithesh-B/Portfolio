@@ -379,25 +379,19 @@ const Projects = forwardRef((props, ref) => {
         <div className="btn-container">
           <div className="btn-content">
             <div onClick={toggleProjects} className="show-more">
-              {showMoreProjects ? "Show less projects" : "Show more projects"}
+              {showMoreProjects ? "View less" : "View more"}
             </div>
             {showMoreProjects ? (
               <KeyboardArrowUpRoundedIcon
                 onClick={toggleProjects}
-                style={{
-                  fontSize: "1.5rem",
-                  cursor: "pointer",
-                  marginTop: "7px",
-                }}
+                className="icon"
+                
               />
             ) : (
               <KeyboardArrowDownRoundedIcon
+                className="icon"
                 onClick={toggleProjects}
-                style={{
-                  fontSize: "1.5rem",
-                  cursor: "pointer",
-                  marginTop: "7px",
-                }}
+                
               />
             )}
           </div>

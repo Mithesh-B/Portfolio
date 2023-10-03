@@ -1,16 +1,23 @@
 import React from "react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./projects.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import PublicIcon from "@mui/icons-material/Public";
 import LaptopRoundedIcon from "@mui/icons-material/LaptopRounded";
 import DevicesRoundedIcon from "@mui/icons-material/DevicesRounded";
+import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
+import KeyboardArrowUpRoundedIcon from "@mui/icons-material/KeyboardArrowUpRounded";
 import { forwardRef } from "react";
 
 const Projects = forwardRef((props, ref) => {
   const projectRefs = useRef([]);
   const imageRefs = useRef([]);
+    const [showMoreProjects, setShowMoreProjects] = useState(false);
+
+    const toggleProjects = () => {
+      setShowMoreProjects(!showMoreProjects);
+    };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -98,6 +105,56 @@ const Projects = forwardRef((props, ref) => {
           <div className="project" ref={(el) => (projectRefs.current[1] = el)}>
             <div style={{ display: "flex", gap: "2rem" }}>
               <div className="techstack">
+                <div className="zero">01 React.js</div>
+                <div className="one">02 Express.js</div>
+                <div className="two">03 MongoDB</div>
+                <div className="two">04 JWT</div>
+              </div>
+              <DevicesRoundedIcon
+                style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+              />
+            </div>
+            <h1 data-scroll data-scroll-speed="0.02" className="title_p">
+              Credit Express.
+            </h1>
+            <div className="description">
+              Credit Express is a web application for managing loans. It allows
+              registered users to avail loans and administrators to approve
+              loans. Users can fulfill loans on a weekly term.
+            </div>
+            <br />
+            <div className="links">
+              <a
+                className="source"
+                href="https://github.com/Mithesh-B/CreditExpress"
+                target="_blank"
+              >
+                <GitHubIcon />
+                Source
+              </a>
+              <a
+                className="demo"
+                href="https://creditexpress.pages.dev/"
+                target="_blank"
+              >
+                <PublicIcon />
+                Live link
+              </a>
+            </div>
+          </div>
+          <div className="image" ref={(el) => (imageRefs.current[1] = el)}>
+            <img
+              loading="lazy"
+              src="../project6.webp"
+              alt="project img"
+              fetchpriority="low"
+            />
+          </div>
+        </div>
+        <div className="projectstop">
+          <div className="project" ref={(el) => (projectRefs.current[2] = el)}>
+            <div style={{ display: "flex", gap: "2rem" }}>
+              <div className="techstack">
                 <div className="zero">01 HTML5</div>
                 <div className="zero">02 CSS</div>
                 <div className="zero">03 JavaScript</div>
@@ -136,7 +193,7 @@ const Projects = forwardRef((props, ref) => {
               </a>
             </div>
           </div>
-          <div className="image" ref={(el) => (imageRefs.current[1] = el)}>
+          <div className="image" ref={(el) => (imageRefs.current[2] = el)}>
             <img
               loading="lazy"
               src="../project2.webp"
@@ -146,7 +203,7 @@ const Projects = forwardRef((props, ref) => {
           </div>
         </div>
         <div className="projectstop">
-          <div className="project" ref={(el) => (projectRefs.current[2] = el)}>
+          <div className="project" ref={(el) => (projectRefs.current[3] = el)}>
             <div style={{ display: "flex", gap: "2rem" }}>
               <div className="techstack">
                 <div className="zero">01 JavaScript</div>
@@ -186,7 +243,7 @@ const Projects = forwardRef((props, ref) => {
               </a>
             </div>
           </div>
-          <div className="image" ref={(el) => (imageRefs.current[2] = el)}>
+          <div className="image" ref={(el) => (imageRefs.current[3] = el)}>
             <img
               loading="lazy"
               src="../project3.webp"
@@ -195,112 +252,154 @@ const Projects = forwardRef((props, ref) => {
             />
           </div>
         </div>
-        <div className="projectstop">
-          <div className="project" ref={(el) => (projectRefs.current[3] = el)}>
-            <div
-              style={{
-                display: "flex",
-                gap: "2rem",
-                justifyContent: "space-between",
-              }}
-            >
-              <div className="techstack">
-                <div className="zero">01 HTML5</div>
-                <div className="one">02 CSS</div>
-                <div className="two">03 JavaScript</div>
-                <div className="three">04 PHP</div>
+        {showMoreProjects && (
+          <>
+            <div className="projectstop">
+              <div
+                className="project appear"
+                ref={(el) => (projectRefs.current[4] = el)}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "2rem",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <div className="techstack">
+                    <div className="zero">01 HTML5</div>
+                    <div className="one">02 CSS</div>
+                    <div className="two">03 JavaScript</div>
+                    <div className="three">04 PHP</div>
+                  </div>
+                  <DevicesRoundedIcon
+                    style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+                  />
+                </div>
+                <h1 data-scroll data-scroll-speed="0.02" className="title_p">
+                  Prints.
+                </h1>
+                <div className="description">
+                  Oh, this one's just a landing page. It doesn't really do much
+                  apart from showcasing my frontend and design skills. The page
+                  is about buying and selling your digital art and customizing
+                  it as wall posters.
+                </div>
+                <br />
+                <div className="links">
+                  <a
+                    className="source"
+                    href="https://github.com/Mithesh-B/prints"
+                    target="_blank"
+                  >
+                    <GitHubIcon />
+                    Source
+                  </a>
+                  <a
+                    className="demo"
+                    href="https://mithesh-b.github.io/prints/"
+                    target="_blank"
+                  >
+                    <PublicIcon />
+                    Live link
+                  </a>
+                </div>
               </div>
-              <DevicesRoundedIcon
-                style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
-              />
-            </div>
-            <h1 data-scroll data-scroll-speed="0.02" className="title_p">
-              Prints.
-            </h1>
-            <div className="description">
-              Oh, this one's just a landing page. It doesn't really do much
-              apart from showcasing my frontend and design skills. The page is
-              about buying and selling your digital art and customizing it as
-              wall posters.
-            </div>
-            <br />
-            <div className="links">
-              <a
-                className="source"
-                href="https://github.com/Mithesh-B/prints"
-                target="_blank"
+              <div
+                className="image appear"
+                ref={(el) => (imageRefs.current[4] = el)}
               >
-                <GitHubIcon />
-                Source
-              </a>
-              <a
-                className="demo"
-                href="https://mithesh-b.github.io/prints/"
-                target="_blank"
-              >
-                <PublicIcon />
-                Live link
-              </a>
-            </div>
-          </div>
-          <div className="image" ref={(el) => (imageRefs.current[3] = el)}>
-            <img
-              loading="lazy"
-              src="../project5.webp"
-              alt="project img"
-              fetchpriority="low"
-            />
-          </div>
-        </div>
-        <div className="projectstop">
-          <div className="project" ref={(el) => (projectRefs.current[4] = el)}>
-            <div style={{ display: "flex", gap: "2rem" }}>
-              <div className="techstack">
-                <div className="zero">01 React.js</div>
-                <div className="one">02 Next.js</div>
-                <div className="two">03 SCSS</div>
-                <div className="two">04 Chart.js</div>
+                <img
+                  loading="lazy"
+                  src="../project5.webp"
+                  alt="project img"
+                  fetchpriority="low"
+                />
               </div>
-              <LaptopRoundedIcon
-                style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+            </div>
+            <div className="projectstop">
+              <div
+                className="project appear"
+                ref={(el) => (projectRefs.current[5] = el)}
+              >
+                <div style={{ display: "flex", gap: "2rem" }}>
+                  <div className="techstack">
+                    <div className="zero">01 React.js</div>
+                    <div className="one">02 Next.js</div>
+                    <div className="two">03 SCSS</div>
+                    <div className="two">04 Chart.js</div>
+                  </div>
+                  <LaptopRoundedIcon
+                    style={{ color: "#e2e2e2c2", fontSize: "1.5rem" }}
+                  />
+                </div>
+                <h1 data-scroll data-scroll-speed="0.02" className="title_p">
+                  Board.
+                </h1>
+                <div className="description">
+                  Board is a modern and user-friendly desktop dashboard
+                  application built with React and Next.js. It uses interactive
+                  line and pie charts to display dummy data. The dashboard
+                  fetches data from an API.
+                </div>
+                <br />
+                <div className="links">
+                  <a
+                    className="source"
+                    href="https://github.com/Mithesh-B/Board"
+                    target="_blank"
+                  >
+                    <GitHubIcon />
+                    Source
+                  </a>
+                  <a
+                    className="demo"
+                    href="https://board-ochre.vercel.app/"
+                    target="_blank"
+                  >
+                    <PublicIcon />
+                    Live link
+                  </a>
+                </div>
+              </div>
+              <div
+                className="image appear"
+                ref={(el) => (imageRefs.current[5] = el)}
+              >
+                <img
+                  loading="lazy"
+                  src="../project4.webp"
+                  alt="project img"
+                  fetchpriority="low"
+                />
+              </div>
+            </div>
+          </>
+        )}
+        <div className="btn-container">
+          <div className="btn-content">
+            <div onClick={toggleProjects} className="show-more">
+              {showMoreProjects ? "Show less projects" : "Show more projects"}
+            </div>
+            {showMoreProjects ? (
+              <KeyboardArrowUpRoundedIcon
+                onClick={toggleProjects}
+                style={{
+                  fontSize: "1.5rem",
+                  cursor: "pointer",
+                  marginTop: "7px",
+                }}
               />
-            </div>
-            <h1 data-scroll data-scroll-speed="0.02" className="title_p">
-              Board.
-            </h1>
-            <div className="description">
-              Board is a modern and user-friendly desktop dashboard application
-              built with React and Next.js. It uses interactive line and pie
-              charts to display dummy data. The dashboard fetches data from an
-              API.
-            </div>
-            <br />
-            <div className="links">
-              <a
-                className="source"
-                href="https://github.com/Mithesh-B/Board"
-                target="_blank"
-              >
-                <GitHubIcon />
-                Source
-              </a>
-              <a
-                className="demo"
-                href="https://board-ochre.vercel.app/"
-                target="_blank"
-              >
-                <PublicIcon />
-                Live link
-              </a>
-            </div>
-          </div>
-          <div className="image" ref={(el) => (imageRefs.current[4] = el)}>
-            <img
-              loading="lazy"
-              src="../project4.webp"
-              alt="project img"
-              fetchpriority="low"
-            />
+            ) : (
+              <KeyboardArrowDownRoundedIcon
+                onClick={toggleProjects}
+                style={{
+                  fontSize: "1.5rem",
+                  cursor: "pointer",
+                  marginTop: "7px",
+                }}
+              />
+            )}
           </div>
         </div>
       </div>
